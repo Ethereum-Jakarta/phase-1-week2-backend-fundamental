@@ -1,0 +1,5 @@
+[
+  { "id": "666", "name": "dajjal", "diseases": ["buntung", "buta", "mati"] },
+  { "id": "000", "name": "saiton", "diseases": ["panas", "demam"] },
+  { "id": "999", "name": "cekNama", "diseases": ["111", "222", "333"] }
+]
