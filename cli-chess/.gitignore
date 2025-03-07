@@ -1,1 +1,33 @@
 node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistem Operasi
+.DS_Store
+Thumbs.db
+
+# Folder build/output
+dist/
+out/
+build/
+
+# Log files
+logs/
+*.log
+logs/*.log
+debug.log
+error.log
+*.gz
+
+# Environment variables (secrets)
+.env
