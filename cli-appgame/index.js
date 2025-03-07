@@ -141,6 +141,7 @@ async function playGame() {
         makeGuess();
       } else {
         attempts++;
+        
         if (guess < target) {
           console.log(chalk.yellow("Terlalu rendah!"));
           makeGuess();
