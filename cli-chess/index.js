@@ -185,6 +185,9 @@ async function welcomeUser() {
   console.log(chalk.bgWhiteBright.bold('  Selamat bermain! ', "\n"));
 }
 
-await welcomeUser()
-await playGame();
+(async() => {
+  await welcomeUser()
+  await playGame();
+})()
+
 
