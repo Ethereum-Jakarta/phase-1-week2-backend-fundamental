@@ -16,5 +16,5 @@ console.log('Decrypted Text:', decryptedText);
 console.log('--- Testing scheduleApp ---');
 
 // Test Case 3
-console.log(scheduleTask());
+scheduleTask();
 // Output: Scheduled task for: ... (future date and time)
