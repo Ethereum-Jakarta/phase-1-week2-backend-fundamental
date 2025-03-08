@@ -149,7 +149,7 @@ function movePiece(from, to) {
 
 const askMove = async () => {
   return new Promise(success => {
-    rl.question(`${turn}, please input your move (e.g., e2 e4): `, (input) => {
+    rl.question(chalk.whiteBright(`${turn}, please input your move (e.g., e2 e4): `), (input) => {
       const moves = input.split(" ");
       const [from, to] = moves;
 
