@@ -1,0 +1,22 @@
+[
+  {
+    "username": "mfa",
+    "password": "asda3",
+    "highestScore": 6
+  },
+  {
+    "username": "ezet",
+    "password": "asdfgh",
+    "highestScore": 5
+  },
+  {
+    "username": "rebel",
+    "password": "qwerty",
+    "highestScore": 4
+  },
+  {
+    "username": "txt",
+    "password": "asdas",
+    "highestScore": 8
+  }
+]

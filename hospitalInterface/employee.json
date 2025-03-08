@@ -1,0 +1,17 @@
+[
+  {
+    "login": false
+  },
+  {
+    "username": "rebel",
+    "password": "123",
+    "position": "dokter",
+    "login": false
+  },
+  {
+    "username": "rebel",
+    "password": "123",
+    "position": "dokter",
+    "login": false
+  }
+]
