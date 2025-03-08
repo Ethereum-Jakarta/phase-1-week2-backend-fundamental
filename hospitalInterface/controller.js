@@ -90,7 +90,7 @@ class HospitalController {
     }
 
     static help() {
-      HospitalView.showHelp()
+      HospitalView.help()
     }
     // lanjutkan command yang lain
 }

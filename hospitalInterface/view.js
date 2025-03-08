@@ -49,7 +49,7 @@ class HospitalView {
     }
   }
 
-  static showHelp() {
+  static help() {
     console.log("Usage:");
     console.log("  node index.js register <username> <password> <jabatan>");
     console.log("  node index.js login <username> <password>");
