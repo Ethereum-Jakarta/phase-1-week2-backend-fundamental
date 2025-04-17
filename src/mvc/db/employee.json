@@ -1,0 +1,17 @@
+[
+  {
+    "username": "harkon",
+    "password": "theravian",
+    "jabatan": "doctor"
+  },
+  {
+    "username": "wei",
+    "password": "theravian",
+    "jabatan": "nurse"
+  },
+  {
+    "username": "as",
+    "password": "qwd",
+    "jabatan": "admin"
+  }
+]
