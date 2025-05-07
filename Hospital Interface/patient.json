@@ -1,0 +1,10 @@
+[
+    { "id": "2", "name": "zhang", "disease": ["muntah", "demam"] },
+    { "id": "3", "name": "jing", "disease": ["luka-kaki", "demam-tinggi"] },
+    { "id": "4", "name": "zeng-keni", "disease": ["demam-tinggi", null] },
+    { "id": "5", "name": "qian", "disease": ["demam-tinggi", "batuk"] },
+    { "id": "7", "name": "didi", "disease": ["batuk", "demam"] },
+    { "id": "8", "name": "arthur-chen", "disease": ["demam", "batuk"] },
+    { "id": "9", "name": "chen-arthur", "disease": ["batuk", null] },
+    { "id": "10", "name": "wei", "disease": ["demam", null] }
+]
