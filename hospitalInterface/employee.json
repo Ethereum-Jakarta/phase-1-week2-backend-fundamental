@@ -1,0 +1,26 @@
+[
+  {
+    "username": "admin",
+    "password": "admin123",
+    "role": "admin",
+    "login": true
+  },
+  {
+    "username": "doctor",
+    "password": "doctor123",
+    "role": "doctor",
+    "login": false
+  },
+  {
+    "username": "newuser",
+    "password": "password123",
+    "position": "doctor",
+    "login": false
+  },
+  {
+    "username": "newuser",
+    "password": "password123",
+    "position": "doctor",
+    "login": false
+  }
+]

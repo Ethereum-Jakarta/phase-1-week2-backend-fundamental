@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "ari",
+    "diseases": [
+      "flu",
+      "batuk"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "riska",
+    "diseases": [
+      "pusing",
+      "meriang"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "cipung",
+    "diseases": [
+      "pusing",
+      "demam"
+    ]
+  }
+]
