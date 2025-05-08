@@ -1,0 +1,1 @@
+better validasi ditaruh di controller udah cukup biar pas di model filenya ga kebanyakan if else

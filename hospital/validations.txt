@@ -1,0 +1,7 @@
+- Validasi register: Hanya terdapat 2 role, yaitu dokter dan admin.
+- Validasi login: Tidak bisa login bersamaan, jika username dan password tidak terdaftar, maka login gagal.
+- Validasi addPatient: Hanya dokter yang bisa menggunakan command ini, tidak ada duplikasi ID, dan dokter hanya bisa memakai ini ketika sudah login.
+- Validasi updatePatient: Hanya dokter yang bisa menggunakan command ini, jika ID dan nama tidak ditemukan, maka updatePatient gagal, dan dokter hanya bisa memakai ini ketika sudah login.
+- Validasi deletePatient: Hanya dokter yang bisa menggunakan command ini, jika ID dan nama tidak ditemukan, maka deletePatient gagal, dan dokter hanya bisa memakai ini ketika sudah login.
+- Validasi logout: Jika tidak ada yang login, maka logout gagal.
+- Validasi show: Jika bukan Admin, maka tidak bisa melihat data patient, tapi bisa melihat data employee. Jika bukan dokter, maka tidak bisa melihat data employee tapi bisa melihat data patient.
