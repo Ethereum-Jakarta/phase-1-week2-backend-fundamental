@@ -1,0 +1,24 @@
+{
+  "name": "week2-backend-fundamental-mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryaenrico/Week2-Backend-Fundamental-MVC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryaenrico/Week2-Backend-Fundamental-MVC/issues"
+  },
+  "homepage": "https://github.com/aryaenrico/Week2-Backend-Fundamental-MVC#readme",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "moment": "^2.29.4"
+  }
+}

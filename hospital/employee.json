@@ -1,0 +1,20 @@
+[
+   {
+      "username": "arya",
+      "password": "12345",
+      "position": "admin",
+      "login": true
+   },
+   {
+      "username": "arya2",
+      "password": "12345",
+      "position": "dokter",
+      "login": true
+   },
+   {
+      "username": "arya9",
+      "password": "12345",
+      "position": "admin",
+      "login": false
+   }
+]
