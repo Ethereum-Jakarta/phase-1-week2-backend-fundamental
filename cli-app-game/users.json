@@ -1,0 +1,23 @@
+[
+  {
+    "username": "brongz1",
+    "password": "12345",
+    "score": 3,
+    "status": "online",
+    "lastLogin": "2024-09-03T03:23:26.247Z"
+  },
+  {
+    "username": "shela",
+    "password": "12345",
+    "score": 3,
+    "status": "offline",
+    "lastLogin": "2024-09-03T03:24:04.793Z"
+  },
+  {
+    "username": "nasywa",
+    "password": "12345",
+    "score": 5,
+    "status": "online",
+    "lastLogin": "2024-09-03T03:24:47.963Z"
+  }
+]
