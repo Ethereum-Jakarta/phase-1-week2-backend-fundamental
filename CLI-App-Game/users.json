@@ -1,0 +1,57 @@
+[
+  {
+    "username": "dhanar",
+    "password": "lovenia",
+    "highestScore": 7
+  },
+  {
+    "username": "nia",
+    "password": "lovedhanar",
+    "highestScore": 3
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "highestScore": 5
+  },
+  {
+    "username": "tito",
+    "password": "123",
+    "highestScore": 6
+  },
+  {
+    "username": "admin2",
+    "password": "123",
+    "highestScore": 7
+  },
+  {
+    "username": "admin3",
+    "password": "234",
+    "highestScore": 7
+  },
+  {
+    "username": "admin4",
+    "password": "123",
+    "highestScore": 14
+  },
+  {
+    "username": "admin5",
+    "password": "123",
+    "highestScore": 15
+  },
+  {
+    "username": "admin6",
+    "password": "123",
+    "highestScore": 17
+  },
+  {
+    "username": "admin7",
+    "password": "123",
+    "highestScore": 18
+  },
+  {
+    "username": "admin8",
+    "password": "123",
+    "highestScore": 20
+  }
+]

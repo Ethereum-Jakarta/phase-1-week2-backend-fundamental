@@ -1,0 +1,16 @@
+[
+  {
+    "id": "2",
+    "name": "irfan",
+    "diseases": [
+      "fever"
+    ]
+  },
+  {
+    "id": "1",
+    "name": "tito",
+    "diseases": [
+      "headache"
+    ]
+  }
+]

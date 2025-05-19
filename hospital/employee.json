@@ -1,0 +1,26 @@
+[
+  {
+    "username": "Nia",
+    "password": "lovedhanar123",
+    "position": "admin",
+    "login": true
+  },
+  {
+    "username": "Dhanar",
+    "password": "narnia2104",
+    "position": "doctor",
+    "login": false
+  },
+  {
+    "username": "admin1",
+    "password": "lovenia123",
+    "position": "admin",
+    "login": false
+  },
+  {
+    "username": "doctor1",
+    "password": "123",
+    "position": "doctor",
+    "login": false
+  }
+]
