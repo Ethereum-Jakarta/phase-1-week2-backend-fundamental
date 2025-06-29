@@ -1,0 +1,14 @@
+[
+  {
+    "id": "3",
+    "namaPasien": "jarjit",
+    "penyakit1": "benjol",
+    "penyakit2": "demam"
+  },
+  {
+    "id": "4",
+    "namaPasien": "lala",
+    "penyakit1": "alergi",
+    "penyakit2": "cacar"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "username": "mhadeh",
+    "password": "1999",
+    "highestScore": 5
+  },
+  {
+    "username": "budi",
+    "password": "doremi",
+    "highestScore": 4
+  },
+  {
+    "username": "kana",
+    "password": "naka",
+    "highestScore": 6
+  },
+  {
+    "username": "hasan",
+    "password": "karim",
+    "highestScore": 11
+  },
+  {
+    "username": "saber",
+    "password": "roam",
+    "highestScore": 8
+  }
+]
