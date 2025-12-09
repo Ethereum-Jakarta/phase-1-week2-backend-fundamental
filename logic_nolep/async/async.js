@@ -28,11 +28,31 @@ function getUserDataCallback(userId, callback) {
 // Implementasi Promise
 function getUserDataPromise(userId) {
   //code
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const result = users.find(user => user.id === userId);
+      if (!result){
+        reject('error');
+      } else {
+        resolve(result);
+      }
+    }, 1000);    
+  });
 }
 
 // Implementasi Async/Await
 async function getUserDataAsync(userId) {
   //code
+  // bisa seperti ini:
+  // return await getUserDataPromise(userId);
+
+  const result = await new Promise((resolve) => {
+    setTimeout(() => {
+        const user = users.find(user => user.id === userId);
+        resolve(user);
+    }, 1000);
+  })
+  return result;
 }
 
 // Test Case Callback
