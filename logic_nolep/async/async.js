@@ -10,7 +10,19 @@ function getUserDataCallback(userId, callback) {
   setTimeout(() => {
     const result = users.find(user => user.id === userId);
     callback(result);
-  })
+  }, 1000)
+
+  // alternatif
+  /* setTimeout(() => {
+      let result = null;
+      for (let i = 0; i < users.length; i++){
+        if (users[i].id === userId){
+          result = users[i];
+          break;
+        }
+      }
+      callback(result);
+    }, 1000); */
 }
 
 // Implementasi Promise
