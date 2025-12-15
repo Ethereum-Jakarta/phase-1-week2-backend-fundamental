@@ -1,0 +1,20 @@
+[
+  {
+    "username": "icank",
+    "password": "321",
+    "status": "online",
+    "lastLogin": "2025-12-15T15:34:39.769Z"
+  },
+  {
+    "username": "ajrun",
+    "password": "123",
+    "status": "offline",
+    "lastLogin": null
+  },
+  {
+    "username": "indra",
+    "password": "123",
+    "status": "offline",
+    "lastLogin": null
+  }
+]
