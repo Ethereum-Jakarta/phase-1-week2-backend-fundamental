@@ -176,10 +176,11 @@ function createGame() {
         switchTurn();
         
         const enemy = currentTurn;
+        const nextTurn = currentTurn === 'white' ? 'black' : 'white';
 
         if (isKingInCheck(board, enemy)) {
             if (!hasAnyLegalMove(board, enemy)) {
-                console.log(`Checkmate! ${currentTurn} wins.`);
+                console.log(`Checkmate! ${nextTurn} wins.`);    
                 process.exit(0);
             } else {
                 console.log('Check.');
