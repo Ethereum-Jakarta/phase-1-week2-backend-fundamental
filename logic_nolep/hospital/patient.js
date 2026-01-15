@@ -1,4 +1,4 @@
-let fs = require("fs");
+const fs = require('fs');
 
 class Patient {
     constructor(id, name, diseases) {
@@ -15,24 +15,30 @@ class Patient {
 
             try {
                 cb(null, JSON.parse(data));
-            } catch (e) {
-                cb("File patient.json corrupt!");
+            } catch(error) {
+                cb(error);
             }
         });
     }
 
     static saveAll(data, cb) {
-        fs.writeFile("./patient.json", JSON.stringify(data, null, 2), cb);
+        fs.writeFile("./patient.json", JSON.stringify(data, null, 2), (err) => {
+            if (err) return cb(err);
+            cb(null, data);
+        });
     }
 
     static add(id, name, diseases, cb) {
         this.findAll((err, data) => {
             if (err) return cb(err);
 
-            let obj = new Patient(id, name, diseases);
+            const obj = new Patient(id, name, diseases);
             data.push(obj);
 
-            this.saveAll(data, (err) => cb(err, obj));
+            this.saveAll(data, (err) => {
+                if (err) return cb(err);
+                cb(null, obj);
+            });
         });
     }
 
@@ -40,13 +46,16 @@ class Patient {
         this.findAll((err, data) => {
             if (err) return cb(err);
 
-            let patient = data.find(p => p.id == id);
-            if (!patient) return cb("Patient not found");
+            const patient = data.find(p => p.id === id);
+            if (!patient) return cb('Patient not found!');
 
             patient.name = name;
             patient.diseases = diseases;
 
-            this.saveAll(data, (err) => cb(err, patient));
+            this.saveAll(data, (err) => {
+                if (err) return cb(err);
+                cb(null, patient);
+            });
         });
     }
 
@@ -54,9 +63,13 @@ class Patient {
         this.findAll((err, data) => {
             if (err) return cb(err);
 
-            let newData = data.filter(p => p.id != id);
+            const patient = data.filter(p => p.id !== id);
+            if (patient) return cb('There are no patients!');
 
-            this.saveAll(newData, (err) => cb(err, id));
+            this.saveAll(patient, (err) => {
+                if (err) return cb(err);
+                cb(null, id)
+            });
         });
     }
 }

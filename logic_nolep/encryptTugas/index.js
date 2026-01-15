@@ -1,67 +1,67 @@
-const { encrypt, decrypt } = require('./cryptoApp');
-const { scheduleTask } = require('./scheduleApp');
-const readline = require('readline');
+import { encrypt, decrypt } from './cryptoApp.js';
+import { scheduleTask } from './scheduleApp.js';
+import readline from 'readline';
+import chalk from 'chalk';
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout    
 });
 
-function ask(q) {
-    return new Promise((resolve) => rl.question(q, resolve));
+function question(query) {
+    return new Promise((resolve) => rl.question(query, resolve));
 }
 
-async function encrypted() {
-    console.log('\n--- Encrypt Text ---');
-    const text = await ask('Enter text: ');
-    const key = await ask('Enter key: ');
-    const encryptedText = encrypt(text, key);
+const key = 'mysceretkey';
+
+async function encryptTxt() {
+    console.log(chalk.yellow('\n--- Encrypted Text ---'));
+    const askEncrypted = await question(chalk.blue('Text: '));
+    const encryptedText = encrypt(askEncrypted, key);
     console.log('Encrypted Text:', encryptedText);
-    return main();
+    return display();
 }
 
-async function decrypted() {
-    console.log('\n--- Decrypted Text ---');
-    const textEncrypt = await ask('Enter encrypt text: ');
-    const key = await ask('Enter key: ');
-    const decryptedText = decrypt(textEncrypt, key);
-    console.log('Decrypted Text:', decryptedText);;
-
+async function decryptTxt() {
+    console.log(chalk.yellow('\n--- Decrypted Text ---'));
+    const askDecrypted = await question(chalk.blue('Text: '));
+    const decryptedText = decrypt(askDecrypted, key);
+    console.log('Decrypted Text:', decryptedText);
+    return display();
 }
 
 async function schedule() {
-    console.log('\n--- Schedule Task ---');
-    const task = await ask('Enter Task: ');
-    const schedule = scheduleTask(task);
-    return schedule;
+    console.log(chalk.yellow('\n--- Schedule Task ---'));
+    const task = await question(chalk.blue('Task: '));
+    await scheduleTask(task)
+    return display();
 }
 
-async function main() {
-    console.log('\n--- Start Menu ---');
-    console.log('1. Encrypted Text');
-    console.log('2. Decrypted Text');
+async function display() {
+    console.log(chalk.yellow('\n--- Testing cryptoApp ---'));
+    console.log('1. Encrypt Text');
+    console.log('2. Decyrpt Text');
     console.log('3. Schedule Task');
     console.log('4. Exit');
-    
-    const choice = await ask('Choose an option: ');
-    
+    const choice = await question(chalk.blue('Pilih opsi: '));
+
     switch(choice) {
-        case '1':
-            await encrypted();
+        case "1":
+            await encryptTxt();
             break;
-        case '2':
-            await decrypted();
+        case "2":
+            await decryptTxt();
             break;
-        case '3':
+        case "3":
             await schedule();
-            return main();
-        case '4':
-            console.log('GoodBye!');
-            rl.close()
+            break;
+        case "4":
+            console.log(chalk.green('GoodBye!'));
+            rl.close();
             break;
         default:
-            console.log('Invalid choice');
+            console.log(chalk.red('Invalid choice!'));
     }
 }
 
-main();
+display();

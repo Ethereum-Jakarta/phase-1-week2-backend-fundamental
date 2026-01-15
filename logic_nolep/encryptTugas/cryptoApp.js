@@ -1,14 +1,25 @@
-const CryptoJS = require('crypto-js');
+import CryptoJS from 'crypto-js';
 
 function encrypt(text, key) {
-    let ciphertext = CryptoJS.AES.encrypt(JSON.stringify(text), key).toString();
-    return ciphertext;
+    try {
+        let ciphertext = CryptoJS.AES.encrypt(text, key).toString();
+        return ciphertext;
+    } catch(error) {
+        console.error(error);
+        return null;
+    }
 }
 
 function decrypt(encryptedText, key) {
-    let bytes = CryptoJS.AES.decrypt(encryptedText, key);
-    let decryptData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-    return decryptData;
+    try {
+        let bytes = CryptoJS.AES.decrypt(encryptedText, key);
+        let originalText = bytes.toString(CryptoJS.enc.Utf8);
+        if (!originalText) console.error('Decryption failed');
+        return originalText
+    } catch(error) {
+        console.error(error);
+        return null;
+    }
 }
 
-module.exports = { encrypt, decrypt };
+export { encrypt, decrypt }

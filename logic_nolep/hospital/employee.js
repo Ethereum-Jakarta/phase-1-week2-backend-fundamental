@@ -1,4 +1,4 @@
-let fs = require("fs");
+const fs = require('fs');
 
 class Employee {
     constructor(username, password, position) {
@@ -16,22 +16,33 @@ class Employee {
 
             try {
                 cb(null, JSON.parse(data));
-            } catch (e) {
-                cb("File employee.json corrupt!");
+            } catch(error) {
+                cb(error)
             }
         });
     }
 
-
     static saveAll(data, cb) {
-        fs.writeFile("./employee.json", JSON.stringify(data, null, 2), cb);
+        fs.writeFile("./employee.json", JSON.stringify(data, null, 2), (err, data) => {
+            if (err) return cb(err);
+            cb(null, data);
+        });
     }
 
-    static register(name, password, role, cb) {
+    static register(username, password, role, cb) {
         this.findAll((err, data) => {
             if (err) return cb(err);
 
-            let obj = new Employee(name, password, role);
+            const user = data.find(u => u.username === username);
+            if (user && user.position === 'admin') {
+                return cb('Name already taken!');
+            }
+
+            if (user && user.position === 'dokter') {
+                return cb('Name already taken!');
+            }
+
+            const obj = new Employee(username, password, role);
             data.push(obj);
 
             this.saveAll(data, (err) => {
@@ -39,17 +50,17 @@ class Employee {
                 cb(null, [obj, data.length]);
             });
         });
-    }
+    } 
 
     static login(username, password, cb) {
         this.findAll((err, data) => {
             if (err) return cb(err);
 
-            let isLogin = data.find(e => e.login === true);
-            if (isLogin) return cb("Tidak bisa login bersamaan!");
+            const isLogin = data.find(e => e.login === true);
+            if (isLogin) return cb('Cannot login together!');
 
-            let user = data.find(e => e.username === username && e.password === password);
-            if (!user) return cb("User tidak ditemukan");
+            const user = data.find(u => u.username === username && u.password === password);
+            if (!user) return cb('Username or password incorrect!');
 
             user.login = true;
 
@@ -64,12 +75,15 @@ class Employee {
         this.findAll((err, data) => {
             if (err) return cb(err);
 
-            let user = data.find(e => e.login === true);
-            if (!user) return cb("Tidak ada user login!");
+            const user = data.find(u => u.login === true);
+            if (!user) return cb('No one logged in!')
 
             user.login = false;
 
-            this.saveAll(data, cb);
+            this.saveAll(data, (err) => {
+                if (err) return cb(err);
+                cb(null, user);
+            });
         });
     }
 
@@ -77,13 +91,12 @@ class Employee {
         this.findAll((err, data) => {
             if (err) return cb(err);
 
-            let user = data.find(e => e.login === true);
-            if (!user) return cb("Silakan login terlebih dahulu!");
-
+            const user = data.find(u => u.login === true);
+            if (!user) return cb('Must login first!');
+            
             cb(null, user);
-        });
+        })
     }
-
 }
 
 module.exports = Employee;
