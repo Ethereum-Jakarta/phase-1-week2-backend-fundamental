@@ -1,0 +1,14 @@
+{
+    "name": "encryptTugas",
+    "version": "1.0.0",
+    "description": "Aplikasi Pengenkripsi dan Penjadwalan Tugas",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "crypto-js": "^4.1.1",
+      "moment": "^2.29.4"
+    }
+  }
+  
