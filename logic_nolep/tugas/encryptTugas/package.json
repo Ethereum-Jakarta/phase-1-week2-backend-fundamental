@@ -1,0 +1,19 @@
+{
+  "name": "encrypttugas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "crypto-js": "^4.2.0",
+    "cryptojs": "^2.5.3",
+    "dayjs": "^1.11.19"
+  }
+}
