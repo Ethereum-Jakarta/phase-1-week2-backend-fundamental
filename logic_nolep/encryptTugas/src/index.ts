@@ -41,7 +41,7 @@ async function schedule(): Promise<string> {
 }
 
 async function display(): Promise<boolean> {
-    let running = true;
+    let running: boolean = true;
     while (running) {
         console.log(chalk.yellow('\n--- Menu ---'));
         console.log(chalk.yellow('1. Encrypted Text'));
