@@ -1,0 +1,20 @@
+[
+  {
+    "username": "serein",
+    "password": "1234",
+    "percobaan": 5,
+    "isLogin": true
+  },
+  {
+    "username": "soir",
+    "password": "5678",
+    "percobaan": 7,
+    "isLogin": false
+  },
+  {
+    "username": "sera",
+    "password": "9000",
+    "percobaan": 7,
+    "isLogin": false
+  }
+]
