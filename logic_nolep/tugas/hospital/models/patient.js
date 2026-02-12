@@ -57,7 +57,8 @@ class Patient {
       const patient = patients.find((emp) => emp.id === id);
       if (!patient)
         throw new Error(`Can't find patient with id: ${id} or ${name}`);
-      patient.name = patient.name || name;
+
+      patient.name = name || patient.name;
       if (penyakit && penyakit.length > 0) {
         patient.diagnosis = penyakit;
       }
@@ -72,12 +73,12 @@ class Patient {
   static async deletePatient(identifier) {
     try {
       const patients = await this.findAll();
+
       const index = patients.findIndex(
         (pt) => pt.id === identifier || pt.name === identifier,
       );
-
       if (index === -1) {
-        throw new Error(`Patient with Id or Name "${identifier}" not found.`);
+        throw new Error(`Can't find patient with Id or Name "${identifier}"`);
       }
 
       patients.splice(index, 1);
