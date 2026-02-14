@@ -1,0 +1,2 @@
+# Ignores the entire 'node_modules' directory used for dependencies
+node_modules/
