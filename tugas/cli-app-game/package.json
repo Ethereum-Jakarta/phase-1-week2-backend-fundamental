@@ -1,0 +1,17 @@
+{
+  "name": "cli-app-game",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "scripts": {
+    "start": "bun index.ts"
+  }
+}
