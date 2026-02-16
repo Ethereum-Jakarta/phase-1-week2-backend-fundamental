@@ -1,0 +1,4 @@
+[
+  { "id": "003", "name": "harry", "diseases": ["stomachache"] },
+  { "id": "004", "name": "ron", "diseases": ["fever", "headache", "cold"] }
+]

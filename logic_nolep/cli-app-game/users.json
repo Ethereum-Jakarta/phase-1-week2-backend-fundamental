@@ -1,0 +1,72 @@
+[
+  {
+    "username": "fahri",
+    "password": "1312",
+    "highestScore": null
+  },
+  {
+    "username": "silvi",
+    "password": "2222",
+    "highestScore": null
+  },
+  {
+    "username": "ananta",
+    "password": "1444",
+    "highestScore": null
+  },
+  {
+    "username": "fadil",
+    "password": "1234",
+    "highestScore": 7
+  },
+  {
+    "username": "fanny",
+    "password": "9889",
+    "highestScore": 1
+  },
+  {
+    "username": "niko",
+    "password": "1212",
+    "highestScore": 3
+  },
+  {
+    "username": "reza",
+    "password": "1234",
+    "highestScore": 3
+  },
+  {
+    "username": "dika",
+    "password": "3333",
+    "highestScore": 5
+  },
+  {
+    "username": "tata",
+    "password": "",
+    "highestScore": 7
+  },
+  {
+    "username": "vanes",
+    "password": "2323",
+    "highestScore": 8
+  },
+  {
+    "username": "rezky",
+    "password": "1133",
+    "highestScore": 9
+  },
+  {
+    "username": "kaven",
+    "password": "3453",
+    "highestScore": 9
+  },
+  {
+    "username": "nala",
+    "password": "3213",
+    "highestScore": 10
+  },
+  {
+    "username": "alfa",
+    "password": "1111",
+    "highestScore": 12
+  }
+]
