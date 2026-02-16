@@ -1,0 +1,19 @@
+{
+  "name": "encrypttugas",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Belajar menggunakan package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "crypto-js": "^4.2.0",
+    "figlet": "^1.8.1",
+    "inquirer": "^12.6.3",
+    "moment": "^2.30.1"
+  }
+}

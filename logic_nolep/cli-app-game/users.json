@@ -1,0 +1,79 @@
+[
+  {
+    "username": "cahaya",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": "2025-07-08T16:05:11.692Z",
+    "bestScore": 8
+  },
+  {
+    "username": "mara",
+    "password": "1234",
+    "status": "online",
+    "lastLogin": "2025-07-08T16:06:02.311Z",
+    "bestScore": 6
+  },
+  {
+    "username": "budi",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": "2025-07-08T15:38:23.133Z",
+    "bestScore": 4
+  },
+  {
+    "username": "ayu",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": "2025-07-08T15:38:53.048Z",
+    "bestScore": 8
+  },
+  {
+    "username": "hanif",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": null,
+    "bestScore": 3
+  },
+  {
+    "username": "indra",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": null,
+    "bestScore": 4
+  },
+  {
+    "username": "bintang",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": null,
+    "bestScore": 4
+  },
+  {
+    "username": "indah",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": null,
+    "bestScore": 5
+  },
+  {
+    "username": "rudi",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": null,
+    "bestScore": 6
+  },
+  {
+    "username": "bagas",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": null,
+    "bestScore": 2
+  },
+  {
+    "username": "arya",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": null,
+    "bestScore": 5
+  }
+]

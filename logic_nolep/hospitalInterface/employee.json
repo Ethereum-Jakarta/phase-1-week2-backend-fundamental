@@ -1,0 +1,32 @@
+[
+  {
+    "username": "cahaya",
+    "password": "1234",
+    "position": "dokter",
+    "login": false
+  },
+  {
+    "username": "mara",
+    "password": "1234",
+    "position": "admin",
+    "login": false
+  },
+  {
+    "username": "cahaya",
+    "password": "1234",
+    "position": "dokter",
+    "login": false
+  },
+  {
+    "username": "bintang",
+    "password": "1234",
+    "position": "admin",
+    "login": true
+  },
+  {
+    "username": "rizky",
+    "password": "1234",
+    "position": "dokter",
+    "login": false
+  }
+]

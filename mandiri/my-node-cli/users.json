@@ -1,0 +1,26 @@
+[
+  {
+    "username": "cahaya",
+    "password": "ok",
+    "status": "offline",
+    "lastLogin": "2025-07-08T02:05:12.864Z"
+  },
+  {
+    "username": "budi",
+    "password": "akuganteng",
+    "status": "offline",
+    "lastLogin": "2025-07-08T02:00:24.707Z"
+  },
+  {
+    "username": "mara",
+    "password": "1234",
+    "status": "offline",
+    "lastLogin": "2025-07-08T02:08:05.899Z"
+  },
+  {
+    "username": "bagus",
+    "password": "hai",
+    "status": "online",
+    "lastLogin": "2025-07-08T02:26:14.985Z"
+  }
+]

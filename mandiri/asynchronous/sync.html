@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //synchronous callback
+        // function halo(name) {
+        //     alert(`Hello ${name}`)
+        // }
+
+        // function tampilkanPesan(callback) {
+        //     const name = prompt("Masukan nama:")
+        //     callback(name)
+        // }
+
+        // tampilkanPesan(halo)
+        // tampilkanPesan(name => alert(`Hello ${name}`))
+
+        const mhs = [
+            {
+                "nama": "cahaya",
+                "nim": "2255201026",
+                "email": "cahaya@gmail.com",
+                "jurusan": "teknik informatika"
+            },
+            {
+                "nama": "indra",
+                "nim": "2255201027",
+                "email": "indra@gmail.com",
+                "jurusan": "teknik informatika"
+            },
+            {
+                "nama": "mara",
+                "nim": "2255201028",
+                "email": "mara@gmail.com",
+                "jurusan": "teknik informatika"
+            }
+        ]
+
+        // for (let i = 0; i < mhs.length; i++) {
+        //     console.log(mhs[i].nama)
+        // }
+
+        console.log("mulai")
+        mhs.forEach(m => console.log(m.nama))
+        console.log("selesai")
+    </script>
+</body>
+
+</html>
