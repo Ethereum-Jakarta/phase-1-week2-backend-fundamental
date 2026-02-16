@@ -1,0 +1,26 @@
+[
+  {
+    "username": "jack",
+    "password": "secret123",
+    "position": "dokter",
+    "login": false
+  },
+  {
+    "username": "asqi",
+    "password": "mhadeh",
+    "position": "admin",
+    "login": false
+  },
+  {
+    "username": "momo",
+    "password": "mimi123",
+    "position": "dokter",
+    "login": false
+  },
+  {
+    "username": "yayat",
+    "password": "tebak00",
+    "position": "admin",
+    "login": false
+  }
+]
