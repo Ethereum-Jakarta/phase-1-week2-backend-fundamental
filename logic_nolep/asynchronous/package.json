@@ -1,0 +1,19 @@
+{
+  "name": "asynchronous",
+  "version": "1.0.0",
+  "description": "",
+  "main": "in-async.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/in-async.js",
+    "dev": "tsc && node dist/in-async.js",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
