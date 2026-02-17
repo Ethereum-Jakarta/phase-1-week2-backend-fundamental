@@ -1,0 +1,18 @@
+{
+  "name": "cli-chess-game",
+  "version": "1.0.0",
+  "description": "A command-line interface chess game.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "chess",
+    "cli",
+    "game",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}
