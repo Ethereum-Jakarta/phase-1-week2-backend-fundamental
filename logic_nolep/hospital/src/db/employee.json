@@ -3,7 +3,7 @@
     "username": "rafli",
     "password": "12345",
     "position": "dokter",
-    "login": false
+    "login": true
   },
   {
     "username": "arifin",
