@@ -1,0 +1,9 @@
+[
+  {
+    "id": "5",
+    "namaPasien": "JohnDoe",
+    "penyakit": [
+      "Flu"
+    ]
+  }
+]
