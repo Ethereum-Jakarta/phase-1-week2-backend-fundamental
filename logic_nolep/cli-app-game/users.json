@@ -1,0 +1,12 @@
+[
+  {
+    "username": "player1",
+    "password": "12345",
+    "highestScore": 90
+  },
+  {
+    "username": "player2",
+    "password": "password",
+    "highestScore": 80
+  }
+]
