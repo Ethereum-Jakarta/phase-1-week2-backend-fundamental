@@ -1,0 +1,23 @@
+[
+  {
+    "username": "Dhaffa",
+    "password": "123",
+    "status": "offline",
+    "bestScore": 1,
+    "lastLogin": "2025-04-04T04:31:13.635Z"
+  },
+  {
+    "username": "ekdapp",
+    "password": "123",
+    "status": "offline",
+    "bestScore": 5,
+    "lastLogin": "2025-04-04T04:27:43.161Z"
+  },
+  {
+    "username": "Habibie",
+    "password": "123",
+    "status": "offline",
+    "bestScore": 3,
+    "lastLogin": "2025-04-04T04:30:44.319Z"
+  }
+]
